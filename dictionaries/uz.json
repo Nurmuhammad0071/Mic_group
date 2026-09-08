@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "MIC Agency — Meta Ads orqali savdoingizni oshiramiz",
+    "description": "MIC Agency — faqat Meta Ads'ga ixtisoslashgan performance marketing jamoasi. Auditoriya tadqiqi, kreativ testlash va optimizatsiya orqali savdoingizni oshiramiz."
+  },
+  "nav": {
+    "services": "Xizmat",
+    "why": "Nega biz",
+    "process": "Jarayon",
+    "contact": "Bog'lanish",
+    "cta": "Konsultatsiya"
+  },
+  "hero": {
+    "kicker": "Meta Ads bo'yicha ixtisoslashgan jamoa",
+    "headline": "Biznesingiz savdosini Meta Ads orqali oshiramiz",
+    "subtext": "MIC Agency — hamma narsani emas, faqat bitta narsani qiladi: Meta platformalarida xarid qilishga tayyor auditoriyani topib, ularni haqiqiy mijozga aylantiradi.",
+    "ctaPrimary": "Bepul konsultatsiya olish",
+    "ctaSecondary": "Qanday ishlaymiz",
+    "proofLine": "Bitta xizmat. To'liq e'tibor. Aniq natija."
+  },
+  "services": {
+    "kicker": "Xizmat",
+    "title": "Meta Ads — bitta xizmat, to'liq tizim",
+    "subtitle": "Har bir kampaniya to'rtta bosqichdan iborat tizim asosida quriladi — tasodifiy targetlash emas.",
+    "items": [
+      {
+        "title": "Auditoriya tadqiqi",
+        "text": "Sizning mahsulotingizni haqiqatan sotib oladigan odamlarni aniqlaymiz — yosh, qiziqish yoki xatti-harakat bo'yicha emas, xarid niyatiga qarab."
+      },
+      {
+        "title": "Kreativ testlash",
+        "text": "Bir nechta reklama variantini bir vaqtda sinovdan o'tkazamiz va faqat natija beradiganini qoldirib, qolganini o'chiramiz."
+      },
+      {
+        "title": "Kampaniya boshqaruvi",
+        "text": "Byudjetni kunlik kuzatib, eng ko'p savdo keltirayotgan reklamaga yo'naltiramiz — qo'lda, avtomatik emas."
+      },
+      {
+        "title": "Shaffof hisobot",
+        "text": "Har hafta aniq raqamlar bilan hisobot beramiz: qancha sarflandi, nechta lid keldi, narxi qancha bo'ldi."
+      }
+    ]
+  },
+  "why": {
+    "kicker": "Nega biz",
+    "title": "Nega aynan MIC Agency",
+    "items": [
+      {
+        "title": "Faqat Meta Ads",
+        "text": "Biz SMM ham, brending ham, dizayn ham qilmaymiz. Butun jamoa e'tibori bitta narsaga qaratilgan — Meta Ads orqali savdo oshirish."
+      },
+      {
+        "title": "Shablon emas, strategiya",
+        "text": "Har bir biznes uchun alohida yondashuv tuziladi. Tayyor shablon yoki universal kampaniya ishlatilmaydi."
+      },
+      {
+        "title": "Tezkor aloqa",
+        "text": "Savollaringizga kunlar emas, soatlar ichida javob olasiz. Kampaniya holatidan doim xabardor bo'lasiz."
+      },
+      {
+        "title": "To'liq shaffoflik",
+        "text": "Byudjetingiz qayerga sarflanayotganini istalgan payt aniq ko'rasiz — yashirin xarajat yo'q."
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Jarayon",
+    "title": "Qanday ishlaymiz",
+    "subtitle": "To'rtta aniq bosqich — birinchi suhbatdan doimiy natijagacha.",
+    "steps": [
+      {
+        "title": "Bepul konsultatsiya",
+        "text": "Biznesingiz, maqsadlaringiz va hozirgi holatingiz haqida gaplashamiz."
+      },
+      {
+        "title": "Strategiya tuzish",
+        "text": "Sohangizga mos target strategiyasi va byudjet rejasi tayyorlanadi."
+      },
+      {
+        "title": "Ishga tushirish",
+        "text": "Kampaniyalar ishga tushiriladi, kreativlar sinovdan o'tkaziladi."
+      },
+      {
+        "title": "Optimizatsiya",
+        "text": "Natijalar muntazam kuzatiladi, byudjet eng samarali yo'nalishga qayta taqsimlanadi."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Savdongizni oshirishga tayyormisiz?",
+    "text": "Bepul konsultatsiya orqali biznesingiz uchun eng to'g'ri strategiyani birga aniqlaymiz. Majburiyatsiz.",
+    "button": "Bepul konsultatsiya olish"
+  },
+  "form": {
+    "kicker": "Bog'lanish",
+    "title": "Ariza qoldiring",
+    "subtitle": "Formani to'ldiring — 24 soat ichida siz bilan bog'lanamiz.",
+    "labels": {
+      "name": "Ismingiz",
+      "phone": "Telefon raqam",
+      "company": "Kompaniya / Biznes nomi",
+      "industry": "Biznes sohangiz",
+      "message": "Qo'shimcha ma'lumot"
+    },
+    "placeholders": {
+      "name": "Ism Familiya",
+      "phone": "+998 90 123 45 67",
+      "company": "Biznesingiz nomi",
+      "message": "Maqsadlaringiz haqida qisqacha yozing (ixtiyoriy)"
+    },
+    "industryOptions": [
+      "Online savdo / online do'kon",
+      "Qurilish",
+      "Xizmat ko'rsatish",
+      "Ta'lim",
+      "Restoran / kafe",
+      "Boshqa"
+    ],
+    "industryPlaceholder": "Tanlang",
+    "submit": "Ariza yuborish",
+    "submitting": "Yuborilmoqda...",
+    "successTitle": "Rahmat!",
+    "successText": "Arizangiz qabul qilindi. 24 soat ichida siz bilan bog'lanamiz.",
+    "errorTitle": "Xatolik yuz berdi",
+    "errorText": "Arizani yuborib bo'lmadi. Iltimos, qayta urinib ko'ring yoki to'g'ridan-to'g'ri qo'ng'iroq qiling.",
+    "errors": {
+      "name": "Ismingizni kiriting (kamida 2 harf)",
+      "phone": "To'g'ri telefon raqam kiriting",
+      "industry": "Biznes sohangizni tanlang"
+    }
+  },
+  "footer": {
+    "tagline": "Meta Ads orqali savdoingizni oshiramiz.",
+    "contact": "Bog'lanish",
+    "phone": "Telefon",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "nav": "Bo'limlar",
+    "rights": "Barcha huquqlar himoyalangan."
+  }
+}

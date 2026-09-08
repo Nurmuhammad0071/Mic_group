@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "MIC Agency — Grow your sales through Meta Ads",
+    "description": "MIC Agency is a team specialized exclusively in Meta Ads. Audience research, creative testing, and optimization built to grow your sales."
+  },
+  "nav": {
+    "services": "Service",
+    "why": "Why us",
+    "process": "Process",
+    "contact": "Contact",
+    "cta": "Consultation"
+  },
+  "hero": {
+    "kicker": "A team specialized in Meta Ads",
+    "headline": "We grow your business sales through Meta Ads",
+    "subtext": "MIC Agency doesn't do everything — it does one thing: find the audience on Meta that's ready to buy, and turn them into real customers.",
+    "ctaPrimary": "Get a free consultation",
+    "ctaSecondary": "How we work",
+    "proofLine": "One service. Full focus. Clear results."
+  },
+  "services": {
+    "kicker": "Service",
+    "title": "Meta Ads — one service, a complete system",
+    "subtitle": "Every campaign is built on a four-stage system — not random targeting.",
+    "items": [
+      {
+        "title": "Audience research",
+        "text": "We identify the people who genuinely intend to buy your product — based on purchase intent, not just age or interests."
+      },
+      {
+        "title": "Creative testing",
+        "text": "We test several ad variations at once and keep only the ones that perform."
+      },
+      {
+        "title": "Campaign management",
+        "text": "We track budget daily and push it toward whatever is driving sales — hands-on, not on autopilot."
+      },
+      {
+        "title": "Transparent reporting",
+        "text": "You get a weekly report with exact numbers: spend, leads generated, and cost per lead."
+      }
+    ]
+  },
+  "why": {
+    "kicker": "Why us",
+    "title": "Why MIC Agency",
+    "items": [
+      {
+        "title": "Meta Ads only",
+        "text": "We don't do SMM, branding, or design. The entire team is focused on one thing — growing sales through Meta Ads."
+      },
+      {
+        "title": "Strategy, not templates",
+        "text": "Every business gets its own approach. No pre-built templates, no generic campaigns."
+      },
+      {
+        "title": "Fast communication",
+        "text": "You get answers in hours, not days, and stay informed on campaign status at all times."
+      },
+      {
+        "title": "Full transparency",
+        "text": "You always know exactly where your budget is going — no hidden costs."
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Process",
+    "title": "How we work",
+    "subtitle": "Four clear stages — from the first conversation to consistent results.",
+    "steps": [
+      {
+        "title": "Free consultation",
+        "text": "We discuss your business, goals, and current situation."
+      },
+      {
+        "title": "Strategy",
+        "text": "We build a targeting strategy and budget plan for your industry."
+      },
+      {
+        "title": "Launch",
+        "text": "Campaigns go live and creatives are put through testing."
+      },
+      {
+        "title": "Optimization",
+        "text": "We monitor results continuously and reallocate budget to what performs best."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to grow your sales?",
+    "text": "In a free consultation, we'll map out the right strategy for your business together. No obligation.",
+    "button": "Get a free consultation"
+  },
+  "form": {
+    "kicker": "Contact",
+    "title": "Send a request",
+    "subtitle": "Fill out the form and we'll reach out within 24 hours.",
+    "labels": {
+      "name": "Your name",
+      "phone": "Phone number",
+      "company": "Company / business name",
+      "industry": "Your business industry",
+      "message": "Additional information"
+    },
+    "placeholders": {
+      "name": "First and last name",
+      "phone": "+998 90 123 45 67",
+      "company": "Your business name",
+      "message": "A short note on your goals (optional)"
+    },
+    "industryOptions": [
+      "Online retail / online store",
+      "Construction",
+      "Services",
+      "Education",
+      "Restaurant / cafe",
+      "Other"
+    ],
+    "industryPlaceholder": "Select",
+    "submit": "Send request",
+    "submitting": "Sending...",
+    "successTitle": "Thank you!",
+    "successText": "Your request has been received. We'll contact you within 24 hours.",
+    "errorTitle": "Something went wrong",
+    "errorText": "We couldn't send your request. Please try again or call us directly.",
+    "errors": {
+      "name": "Enter your name (at least 2 letters)",
+      "phone": "Enter a valid phone number",
+      "industry": "Select your business industry"
+    }
+  },
+  "footer": {
+    "tagline": "Growing sales through Meta Ads.",
+    "contact": "Contact",
+    "phone": "Phone",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "nav": "Sections",
+    "rights": "All rights reserved."
+  }
+}
