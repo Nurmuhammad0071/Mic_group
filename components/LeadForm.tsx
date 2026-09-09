@@ -10,13 +10,32 @@ import type { Locale } from "@/lib/i18n-config";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
+const PHONE_PREFIX = "+998";
+
+function localPhoneDigits(value: string) {
+  let digits = value.replace(/\D/g, "");
+  if (digits.startsWith("998")) digits = digits.slice(3);
+  return digits.slice(0, 9);
+}
+
+function formatUzPhone(value: string) {
+  const d = localPhoneDigits(value);
+  let formatted = PHONE_PREFIX;
+  if (d.length === 0) return `${formatted} `;
+  formatted += ` ${d.slice(0, 2)}`;
+  if (d.length > 2) formatted += ` ${d.slice(2, 5)}`;
+  if (d.length > 5) formatted += `-${d.slice(5, 7)}`;
+  if (d.length > 7) formatted += `-${d.slice(7, 9)}`;
+  return formatted;
+}
+
 function buildSchema(dict: Dictionary) {
   return z.object({
     name: z.string().trim().min(2, dict.form.errors.name),
     phone: z
       .string()
       .trim()
-      .regex(/^\+?[0-9\s\-()]{9,20}$/, dict.form.errors.phone),
+      .refine((value) => localPhoneDigits(value).length === 9, dict.form.errors.phone),
     company: z.string().trim().optional(),
     industry: z.string().min(1, dict.form.errors.industry),
     message: z.string().trim().optional(),
@@ -48,7 +67,7 @@ export default function LeadForm({
     formState: { errors },
   } = useForm<FormValues>({
     resolver: zodResolver(schema),
-    defaultValues: { name: "", phone: "", company: "", industry: "", message: "" },
+    defaultValues: { name: "", phone: "+998 ", company: "", industry: "", message: "" },
   });
 
   async function onSubmit(values: FormValues) {
@@ -60,6 +79,19 @@ export default function LeadForm({
         body: JSON.stringify({ ...values, locale }),
       });
       if (!res.ok) throw new Error("Request failed");
+      const event_id = crypto.randomUUID();
+      if (typeof window !== "undefined" && window.fbq) {
+        window.fbq("track", "Lead", {}, { eventID: event_id });
+      }
+      void fetch("/api/meta-capi", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          event_id,
+          event_source_url: window.location.href,
+          phone: values.phone,
+        }),
+      }).catch(() => {});
       setState("success");
       reset();
     } catch {
@@ -114,8 +146,27 @@ export default function LeadForm({
           <input
             id="phone"
             type="tel"
+            inputMode="numeric"
+            autoComplete="tel"
+            maxLength={17}
             placeholder={dict.form.placeholders.phone}
-            {...register("phone")}
+            {...register("phone", {
+              onChange: (event) => {
+                event.target.value = formatUzPhone(event.target.value);
+              },
+            })}
+            onKeyDown={(event) => {
+              const start = event.currentTarget.selectionStart ?? 0;
+              const end = event.currentTarget.selectionEnd ?? 0;
+              if (
+                (event.key === "Backspace" || event.key === "Delete") &&
+                start <= 5 &&
+                end <= 5 &&
+                localPhoneDigits(event.currentTarget.value).length === 0
+              ) {
+                event.preventDefault();
+              }
+            }}
             aria-invalid={!!errors.phone}
             className="rounded border border-line-strong bg-ink px-4 py-3 text-sm text-paper placeholder:text-paper-faint focus:border-gold"
           />

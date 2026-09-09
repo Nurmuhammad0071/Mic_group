@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import { locales, type Locale } from "@/lib/i18n-config";
 import { getDictionary } from "@/lib/dictionaries";
+import MetaPixel from "@/components/MetaPixel";
 import "../globals.css";
 
 const manrope = Manrope({
@@ -45,7 +46,10 @@ export default function LocaleLayout({
 }) {
   return (
     <html lang={locale} className={`${manrope.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        <MetaPixel />
+        {children}
+      </body>
     </html>
   );
 }
